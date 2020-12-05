@@ -1,1 +1,422 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <!-- Scripts -->
+    <script
+      src="https://kit.fontawesome.com/022e2ee1e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- Body -->
+  <body>
+    <!-- Main Content -->
+
+    <main role="main">
+      <!-- About me -->
+      <section class="jumbotron text-center">
+        <div class="row">
+          <div class="col-sm-4 align-self-center">
+            <img
+              src="img/profile.jpg"
+              class="rounded-circle"
+              width="320"
+              height="320"
+              style="object-fit: cover"
+            />
+          </div>
+          <div class="col-sm-7 text-left">
+            <h1>About me</h1>
+            <p class="lead">
+              Hi, my name is Lea Novak and I'm currently studying the master's
+              degree programme Computer Science at
+              <a href="https://www.tugraz.at">Graz University of Technology</a>.
+              The main focus of my studies lies in Knowledge Technologies and
+              Multimedia Information Systems.
+            </p>
+            <p class="lead">
+              In my free time, I like to play video games which also leads to an
+              interest in developing some games with
+              <a href="https://unity.com/">Unity</a>. Below you can find a few
+              projects I worked on either for a course or to experiment with
+              different programming languages or trying out various frameworks.
+            </p>
+
+            <table class="table-sm table-borderless">
+              <tbody>
+                <tr>
+                  <td class="text-center">
+                    <i class="fab fa-github align-middle"></i>
+                  </td>
+                  <td>
+                    <a
+                      class="btn-floating btn-git"
+                      type="button"
+                      role="button"
+                      href="https://github.com/sheryl31"
+                      >Lea Novak</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">
+                    <i class="fas fa-envelope align-middle"></i>
+                  </td>
+                  <td>
+                    <a
+                      href="#"
+                      id="mailbutton"
+                      class="btn-floating"
+                      type="button"
+                      role="button"
+                      >Contact
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <div
+        class="projects-header px-3 py-3 pt-md-5 pb-md-4 text-center mx-auto bg-light"
+      >
+        <h1 class="display-6">Projects</h1>
+      </div>
+
+      <!-- Titration Experiment -->
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card mb-4 shadow-sm">
+                <div class="view" style="transform: rotate(0)">
+                  <img src="img/ChemicsLab.png" class="card-img-top" />
+                  <div class="card-img-overlay d-flex">
+                    <p class="card-text">Show Gallery</p>
+                    <a
+                      href="gallery#ChemicsLab"
+                      title="Titration Experiment"
+                      class="stretched-link"
+                    ></a>
+                  </div>
+                </div>
+
+                <div class="card-body flex-column d-flex">
+                  <h4 class="card-title">
+                    Interactive Chemistry Simulation in a Virtual Laboratory
+                  </h4>
+                  <p class="card-text">
+                    My bachelor thesis discusses the implementation of a
+                    chemistry simulation, a titration simulation, and the
+                    integration into
+                    <a href="https://maroon.tugraz.at/">Maroon</a>. Try the
+                    simulation in your browser.
+                  </p>
+                  <div class="mt-auto">
+                    <a
+                      class="btn btn-sm btn-outline-secondary"
+                      href="projects/maroon_titration_experiment/"
+                      role="button"
+                      >Open<i class="fas fa-desktop pl-2"></i
+                    ></a>
+                    <a
+                      class="btn btn-floating btn-git"
+                      type="button"
+                      role="button"
+                      href="https://github.com/GameLabGraz/Maroon"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      class="btn btn-floating btn-yt"
+                      type="button"
+                      role="button"
+                      href="https://www.youtube.com/watch?v=IgfC17oyIbs"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- React Todo App -->
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card mb-4 shadow-sm">
+                <div class="view" style="transform: rotate(0)">
+                  <img
+                    src="https://raw.githubusercontent.com/sheryl31/Todo-React-App/master/images/TodoApp.png"
+                    class="card-img-top"
+                  />
+                  <div class="card-img-overlay d-flex">
+                    <p class="card-text">Show Gallery</p>
+                    <a
+                      href="gallery#TodoApp"
+                      class="stretched-link"
+                      title="React Todo App"
+                    ></a>
+                  </div>
+                </div>
+                <div class="card-body flex-column d-flex">
+                  <h4 class="card-title">React Todo App</h4>
+                  <p class="card-text">
+                    Simple Todo App build in React. Create a new list by adding
+                    a list name. A popup will appear and the user can start
+                    adding todos, mark todos as done, or delete todos. Edit a
+                    previous list by clicking on it again. Change the title by
+                    clicking on it or click the edit button.
+                  </p>
+                  <div class="mt-auto">
+                    <a
+                      class="btn btn-floating btn-link pl-0"
+                      href="https://sheryl31.github.io/Todo-React-App/"
+                      role="button"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    <a
+                      class="btn btn-floating btn-git"
+                      type="button"
+                      role="button"
+                      href="https://github.com/sheryl31/Todo-React-App"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PWA -->
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card mb-4 shadow-sm">
+                <div class="view" style="transform: rotate(0)">
+                  <img src="img/pwa-A2HS-chrome.png" class="card-img-top" />
+                  <div class="card-img-overlay d-flex">
+                    <p class="card-text">Show Gallery</p>
+                    <a
+                      href="gallery#PWA"
+                      class="stretched-link"
+                      title="Conference PWA with Nuxt and Vue"
+                    ></a>
+                  </div>
+                </div>
+                <div class="card-body flex-column d-flex">
+                  <h4 class="card-title">Conference PWA with Nuxt and Vue</h4>
+                  <p class="card-text">
+                    The goal of this project was to build a PWA for a provided
+                    website with Nuxt and Vue at the course Information
+                    Architecture and Web Usability. The application was deployed
+                    at Heroku for testing and live-demo purposes. The PWA passed
+                    a Lighthouse test with a score of 100.
+                  </p>
+                  <div class="mt-auto">
+                    <a
+                      class="btn btn-floating btn-link pl-0"
+                      type="button"
+                      role="button"
+                      href="https://iaweb-pwa.herokuapp.com/"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- VRVU Sentinel Game -->
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card mb-4 shadow-sm">
+                <div class="view" style="transform: rotate(0)">
+                  <img
+                    src="https://raw.githubusercontent.com/sheryl31/VRVU_SentinelGame/master/Images/SentinelGame_3.png"
+                    class="card-img-top"
+                  />
+                  <div class="card-img-overlay d-flex">
+                    <p class="card-text">Show Gallery</p>
+                    <a
+                      href="gallery#SentinelGame"
+                      class="stretched-link"
+                      title="Sentinel Game"
+                    ></a>
+                  </div>
+                </div>
+                <div class="card-body flex-column d-flex">
+                  <h4 class="card-title">VR - Sentinel Game</h4>
+                  <p class="card-text">
+                    This is a small game made for the lab exercises for the
+                    course Virtual Reality (2018) at the TU Graz. It is a
+                    teleporting simulator made for smartphones in combination
+                    with the Google Cardboard. The goal is to get past all
+                    sentinels without being seen.
+                  </p>
+                  <div class="mt-auto">
+                    <a
+                      class="btn btn-floating btn-git pl-0"
+                      type="button"
+                      role="button"
+                      href="https://github.com/sheryl31/VRVU_SentinelGame"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- GDD Bricktopia -->
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card mb-4 shadow-sm">
+                <div class="view" style="transform: rotate(0)">
+                  <img src="img/GDD_Bricktopia.png" class="card-img-top" />
+                  <div class="card-img-overlay d-flex">
+                    <p class="card-text">Show Gallery</p>
+                    <a
+                      href="gallery#GDD_Bricktopia"
+                      class="stretched-link"
+                      title="GDD_Bricktopia"
+                    ></a>
+                  </div>
+                </div>
+                <div class="card-body flex-column d-flex">
+                  <h4 class="card-title">GDD - Bricktopia</h4>
+                  <p class="card-text">
+                    Bricktopia was created for the course Game Design and
+                    Development (2017) at the TU Graz. The goal of the game is
+                    to solve all main quests to build up the city and get more
+                    citizens. The design was based on Lego combined with
+                    real-world graphics graphics.
+                  </p>
+                  <div class="mt-auto">
+                    <a
+                      class="btn btn-floating btn-yt pl-0"
+                      type="button"
+                      role="button"
+                      href="https://www.youtube.com/watch?v=W1CTUHyi5Qg"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Generating SVG Files Programmatically with D3 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card mb-4 shadow-sm">
+                <div class="view" style="transform: rotate(0)">
+                  <img src="img/ivis_line.png" class="card-img-top" />
+                  <div class="card-img-overlay d-flex">
+                    <p class="card-text">Show Gallery</p>
+                    <a
+                      href="gallery#GeneratingSVG"
+                      class="stretched-link"
+                      title="Generating SVG Files Programmatically with D3"
+                    ></a>
+                  </div>
+                </div>
+                <div class="card-body flex-column d-flex">
+                  <h4 class="card-title">
+                    Generating SVG Files Programmatically with D3
+                  </h4>
+                  <p class="card-text">
+                    The goal was to generate accessible graphs (SVG) for web
+                    content by using ARIA attributes. The SVG files were
+                    generated programmatically by executing a command in the
+                    command line. The D3v5 code was written in Typescript, NPM
+                    was used as package manager, gulp as task runner, and a CSV
+                    was taken as input. 3 charts were supported: Line-, Bar-,
+                    and Pie-Chart. E.g. gulp command
+                    <code
+                      >gulp compile --file &lt;ts-file&gt; --dataset
+                      &lt;csv-file&gt;</code
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Snake -->
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card mb-4 shadow-sm">
+                <div class="view" style="transform: rotate(0)">
+                  <img src="img/Snake.png" class="card-img-top" />
+                  <div class="card-img-overlay d-flex">
+                    <p class="card-text">Show Gallery</p>
+                    <a
+                      href="gallery#Snake"
+                      class="stretched-link"
+                      title="Snake"
+                    ></a>
+                  </div>
+                </div>
+                <div class="card-body flex-column d-flex">
+                  <h4 class="card-title">Python Snake Game</h4>
+                  <p class="card-text">
+                    The game snake was created in Python with the pygame module.
+                    The game features a player score and a high score.
+                  </p>
+                  <div class="mt-auto">
+                    <a
+                      class="btn btn-floating btn-git pl-0"
+                      type="button"
+                      role="button"
+                      href="https://github.com/sheryl31/Snake"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="text-center">© 2020 Lea Novak</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      $(document).ready(function () {
+        $("#mailbutton").click(function (event) {
+          window.location = "mailto:lea.n1@gmx.at";
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer p {
+  margin-bottom: 0.25rem;
+}
+
+a,
+.jumbotron a {
+  text-decoration: none;
+}
+
+.fa-github,
+.fa-youtube {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.fa-youtube {
+  color: rgb(226, 4, 4);
+}
+
+.fa-github:hover,
+.fa-youtube:hover {
+  color: rgb(114, 114, 114) !important;
+}
+
+.fa-envelope {
+  color: black;
+  font-size: 1.25rem;
+}
+
+.card:hover {
+  box-shadow: 8px 8px 5px blue;
+  /* transform: scale(1.05); */
+}
+
+.card .view:hover > *:not(.card-img-overlay) {
+  transition: all 0.3s ease;
+  -webkit-filter: blur(2px); /* Chrome, Safari, Opera */
+  filter: blur(2px);
+}
+
+.card .card-img-overlay {
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .view:hover .card-img-overlay {
+  visibility: visible;
+  color: rgb(236, 236, 236);
+  background: rgba(92, 92, 92, 0.781) !important;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+@media (min-width: 34em) {
+  .card-deck > .card {
+    width: 29%;
+    flex-wrap: wrap;
+    flex: initial;
+  }
+}

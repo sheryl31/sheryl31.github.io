@@ -1,0 +1,2 @@
+RewriteEngine On
+Redirect 301 projects/maroon_titration_experiment/index.html projects/maroon_titration_experiment/

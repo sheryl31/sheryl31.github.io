@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif !important;
+      }
+      .row {
+        margin: 15px;
+      }
+      .img-fit {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+      }
+      a {
+        margin: 0.3rem 0 0.3rem 0;
+        /* overflow: hidden; */
+      }
+      .fa-arrow-left {
+        cursor: pointer;
+        font-size: 1.5rem;
+      }
+      .btn-arrow {
+        transition: all 2s ease;
+      }
+
+      .btn-arrow:hover {
+        outline: auto;
+
+        transform: scale(1.1);
+      }
+    </style>
+    <title>Gallery</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/022e2ee1e6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div
+      class="projects-header px-3 py-3 pt-md-4 pb-md-5 d-flex mx-auto bg-dark"
+    >
+      <div class="container">
+        <div class="row" style="align-items: center">
+          <div class="col-md-2">
+            <a
+              class="btn btn-lg btn-arrow"
+              style="color: white; float: left"
+              onclick="goBack()"
+              role="button"
+              ><i class="fas fa-arrow-left"></i
+            ></a>
+          </div>
+          <div class="col-md-8 text-center">
+            <h1 class="display-4 text-white">Gallery</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------->
+    <div class="projects-header px-3 py-3 pt-md-5 pb-md-4 text-center mx-auto">
+      <h4 class="display-6" id="ChemicsLab">
+        Interactive Chemistry Simulation in a Virtual Laboratory
+      </h4>
+    </div>
+    <div class="container">
+      <div class="row">
+        <a
+          href="img/ChemicsLab.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img
+            src="img/ChemicsLab.png"
+            class="img-fluid rounded img-fit"
+            style="height: 110%"
+          />
+        </a>
+        <a
+          href="img/ChemicsLab_GUI_new.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img
+            src="img/ChemicsLab_GUI_new.png"
+            class="img-fluid rounded img-fit"
+          />
+        </a>
+        <a
+          href="img/ChemicsLab2.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="img/ChemicsLab2.png" class="img-fluid rounded img-fit" />
+        </a>
+      </div>
+
+      <!-------------------------->
+      <div
+        class="projects-header px-3 py-3 pt-md-5 pb-md-4 text-center mx-auto"
+      >
+        <h4 class="display-6" id="TodoApp">React Todo App</h4>
+      </div>
+      <div class="row">
+        <a
+          href="img/React_TodoApp.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="img/React_TodoApp.png" class="img-fluid rounded img-fit" />
+        </a>
+        <a
+          href="img/React_TodoApp2.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="img/React_TodoApp2.png" class="img-fluid rounded img-fit" />
+        </a>
+        <a
+          href="img/React_TodoApp3.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="img/React_TodoApp3.png" class="img-fluid rounded img-fit" />
+        </a>
+      </div>
+
+      <!-------------------------->
+      <div
+        class="projects-header px-3 py-3 pt-md-5 pb-md-4 text-center mx-auto"
+      >
+        <h4 class="display-6" id="PWA">Conference PWA with Nuxt and Vue</h4>
+      </div>
+      <div class="row">
+        <a
+          href="img/pwa-A2HS-chrome.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img
+            src="img/pwa-A2HS-chrome.png"
+            class="img-fluid rounded img-fit"
+          />
+        </a>
+        <a
+          href="img/pwa-push-notifications.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img
+            src="img/pwa-push-notifications.png"
+            class="img-fluid rounded img-fit"
+          />
+        </a>
+      </div>
+
+      <!-------------------------->
+      <div
+        class="projects-header px-3 py-3 pt-md-5 pb-md-4 text-center mx-auto"
+      >
+        <h4 class="display-6" id="SentinelGame">VR - Sentinel Game</h4>
+      </div>
+      <div class="row">
+        <a
+          href="https://raw.githubusercontent.com/sheryl31/VRVU_SentinelGame/master/Images/SentinelGame_4.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img
+            src="https://raw.githubusercontent.com/sheryl31/VRVU_SentinelGame/master/Images/SentinelGame_4.png"
+            class="img-fluid rounded img-fit"
+          />
+        </a>
+        <a
+          href="https://raw.githubusercontent.com/sheryl31/VRVU_SentinelGame/master/Images/SentinelGame_3.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img
+            src="https://raw.githubusercontent.com/sheryl31/VRVU_SentinelGame/master/Images/SentinelGame_3.png"
+            class="img-fluid rounded img-fit"
+          />
+        </a>
+        <a
+          href="https://raw.githubusercontent.com/sheryl31/VRVU_SentinelGame/master/Images/SentinelGame_2.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img
+            src="https://raw.githubusercontent.com/sheryl31/VRVU_SentinelGame/master/Images/SentinelGame_2.png"
+            class="img-fluid rounded img-fit"
+          />
+        </a>
+      </div>
+
+      <!-------------------------->
+      <div
+        class="projects-header px-3 py-3 pt-md-5 pb-md-4 text-center mx-auto"
+      >
+        <h4 class="display-6" id="GDD_Bricktopia">GDD Bricktopia</h4>
+      </div>
+      <div class="row">
+        <a
+          href="img/GDD_Bricktopia_Createplayerscene.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img
+            src="img/GDD_Bricktopia_Createplayerscene.png"
+            class="img-fluid rounded img-fit"
+          />
+        </a>
+        <a
+          href="img/GDD_Bricktopia.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="img/GDD_Bricktopia.png" class="img-fluid rounded img-fit" />
+        </a>
+        <a
+          href="img/GDD_Bricktopia_BridgeQuest.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img
+            src="img/GDD_Bricktopia_BridgeQuest.png"
+            class="img-fluid rounded img-fit"
+          />
+        </a>
+      </div>
+      <div class="row">
+        <a
+          href="img/GDD_Bricktopia_BridgeQuest2.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img
+            src="img/GDD_Bricktopia_BridgeQuest2.png"
+            class="img-fluid rounded img-fit"
+          />
+        </a>
+      </div>
+      <!-------------------------->
+      <div
+        class="projects-header px-3 py-3 pt-md-5 pb-md-4 text-center mx-auto"
+      >
+        <h4 class="display-6" id="GeneratingSVG">
+          Generating SVG Files Programmatically with D3
+        </h4>
+      </div>
+      <div class="row">
+        <a
+          href="img/ivis_bar.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="img/ivis_bar.png" class="img-fluid rounded img-fit" />
+        </a>
+        <a
+          href="img/ivis_line.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="img/ivis_line.png" class="img-fluid rounded img-fit" />
+        </a>
+        <a
+          href="img/ivis_pie.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="img/ivis_pie.png" class="img-fluid rounded img-fit" />
+        </a>
+      </div>
+      <!-------------------------->
+      <div
+        class="projects-header px-3 py-3 pt-md-5 pb-md-4 text-center mx-auto"
+      >
+        <h4 class="display-6" id="Snake">Python Snake Game</h4>
+      </div>
+      <div class="row">
+        <a
+          href="img/Snake.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="img/Snake.png" class="img-fluid rounded img-fit" />
+        </a>
+        <a
+          href="img/Snake2.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="img/Snake2.png" class="img-fluid rounded img-fit" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+      $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>
