@@ -45,6 +45,11 @@ a,
 .fa-youtube {
   color: black;
   font-size: 1.5rem;
+  cursor: pointer;
+}
+.fa-images {
+  color: black;
+  font-size: 1.2rem;
 }
 
 .fa-youtube {
@@ -88,7 +93,7 @@ a,
 
 .card-img-top {
   width: 100%;
-  height: 15vw;
+  min-height: 15vw;
   object-fit: cover;
 }
 
